@@ -1,38 +1,126 @@
+body{
+  background-color: #161616;
+  color:#ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
 .App {
+  border-bottom: 1px solid #111111;
+}
+
+.navigation{
+  width: 100vw;
+  height: 90px;
+  color:#48c072;
+}
+
+.navigation-logo{
+  position: absolute;
+  left: 25px;
+  top: 0px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation-logo:hover, .navigation-logo:focus, .navigation-logo:active{
+  text-decoration: none;
+  color: inherit;
+} 
+
+.logo{
+  display: inline-block;
+  background:#48c072;
+  height: 60px;
+  width: 60px;
+  flex-basis: 40%;
+  cursor: pointer;
+  border-radius: 2px;;
+}
+
+.logo-name{
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0px 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.navigation-sub{
+  position: absolute;
+  right: 25px;;
+  top: 0px;
+  height: 90px;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+a.item-about, a.item-projects, a.item-settings{
+  height: 60px;
+  line-height: 60px;
+  padding: 0px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.item-about:hover, a.item-projects:hover, a.item-settings,
+a.item-about:focus, a.item-projects:focus, a.item-settings:focus,
+a.item-about:active, a.item-projects:active, a.item-setttings:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects-container{
+  width: 100%;
+  text-align: center;
+  overflow-wrap: normal;
+}
+
+.project{
+  height: 180px;
+  width: 360px;
+  display: inline-block;
+  background-color: #202020;
+  margin: 25px;
+  padding: 15px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.project-link, .project-link:hover, .project-link:focus, .project-link:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-image{
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.project-image>img{
+  height: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.project-title{
+  width: 350px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.project-year{
+  margin-bottom: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.project-category{
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
